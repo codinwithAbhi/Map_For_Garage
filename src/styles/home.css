@@ -1,0 +1,23 @@
+/* Main Layout - Sidebar + Map */
+.home-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100vh;
+  transition: grid-template-columns 0.3s ease-in-out;
+}
+
+/* Sidebar Open */
+.sidebar-open {
+  grid-template-columns: 350px 1fr;
+}
+
+/* Sidebar Closed (Keeps Toggle Button Visible) */
+.sidebar-closed {
+  grid-template-columns: 50px 1fr; /* Small width for sidebar to keep toggle button */
+}
+
+/* Map Container */
+.map-container {
+  height: 100vh;
+  transition: width 0.3s ease-in-out;
+}
